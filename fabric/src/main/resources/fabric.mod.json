@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "echosync",
+  "version": "${version}",
+  "name": "EchoSync",
+  "description": "The universal real time data sync network for Minecraft mods.",
+  "authors": [
+    "The normik Authors"
+  ],
+  "contact": {
+    "homepage": "https://echosync.normik.org",
+    "sources": "https://github.com/normiklabs/EchoSync-Mod",
+    "issues": "https://github.com/normiklabs/EchoSync-Mod/issues"
+  },
+  "license": "Apache-2.0",
+  "icon": "assets/echosync/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "org.normik.echosync.mod.fabric.EchoSyncFabricMod"
+    ],
+    "server": [
+      "org.normik.echosync.mod.fabric.EchoSyncFabricMod"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=${fabric_loader_version}",
+    "minecraft": "~${minecraft_version}",
+    "java": ">=${java_version}"
+  }
+}

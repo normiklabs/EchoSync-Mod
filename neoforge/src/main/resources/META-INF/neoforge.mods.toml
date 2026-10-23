@@ -1,0 +1,33 @@
+# noinspection TomlUnresolvedReference
+modLoader="javafml"
+loaderVersion="[4,)"
+license="Apache-2.0"
+issueTrackerURL="https://github.com/normiklabs/EchoSync-Mod/issues"
+
+[[mods]]
+# noinspection Reference Problems
+modId="echosync"
+version="${version}"
+displayName="EchoSync"
+displayURL="https://echosync.normik.org"
+logoFile="assets/echosync/icon.png"
+authors="The normik Authors"
+description='''
+The universal real time data sync network for Minecraft mods.
+'''
+
+[[dependencies.echosync]]
+# noinspection Reference Problems
+modId="neoforge"
+type="required"
+versionRange="[${neoforge_version},)"
+ordering="NONE"
+side="BOTH"
+
+[[dependencies.echosync]]
+# noinspection Reference Problems
+modId="minecraft"
+type="required"
+versionRange="[${minecraft_version},)"
+ordering="NONE"
+side="BOTH"

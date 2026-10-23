@@ -1,0 +1,45 @@
+# Gradle
+.gradle/
+**/build/
+out/
+bin/
+gradle-app.setting
+!gradle/wrapper/gradle-wrapper.jar
+!gradle/wrapper/gradle-wrapper.properties
+
+# Minecraft
+run/
+**/run/
+logs/
+**/logs/
+crash-reports/
+**/crash-reports/
+*.log
+*.log.gz
+
+# IDE's & Editors
+.idea/
+*.iml
+*.ipr
+*.iws
+.project
+.classpath
+.settings/
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
+*~
+*.swp
+
+# Secrets, Local Properties & Signing Keys
+.env
+.env.*
+!.env.example
+local.properties
+gradle-local.properties
+*.asc
+*.gpg
+*.key
+*.pem
