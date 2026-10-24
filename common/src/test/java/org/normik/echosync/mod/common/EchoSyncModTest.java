@@ -53,6 +53,7 @@ class EchoSyncModTest {
     @Test
     void binaryFrameCodecShouldEncodeAndDecodeBigEndianFrames() {
         assertTrue(BinaryFrameCodec.isValidTopic("pub:chunk_0_0"));
+        assertFalse(BinaryFrameCodec.isValidTopic("invalid topic"));
         byte[] payload = new byte[] {10, 20, 30, 40};
         byte[] clientFrame = BinaryFrameCodec.encodeClientFrame(2, "pub:chunk_0_0", payload);
         assertEquals(BinaryFrameCodec.PROTOCOL_VERSION, clientFrame[0]);
